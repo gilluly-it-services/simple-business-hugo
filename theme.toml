@@ -1,0 +1,12 @@
+name = "Gilluly IT Business Site Top Nav"
+license = "MIT"
+licenselink = "https://github.com/gilluly-it-services/simple-business-hugo/LICENSE"
+description = "A basic theme for business users in Hugo"
+homepage = "https://www.gillulyit.com/projects/hugo-business-template.html"
+tags = ["business"]
+features = ["mainmenu", "logo"]
+min_version = "0.115.0"
+
+[author]
+  name = "Gilluly IT Services, LLC"
+  homepage = "https://www.gillulyit.com/"

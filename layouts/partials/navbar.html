@@ -1,0 +1,8 @@
+<div id="navbar">
+<ul id="navlist">
+{{ $currentnode := . }}
+{{ range .Site.Menus.mainmenu }}
+<li><a href="{{ .URL }}" class='navitem{{ if $currentnode.IsMenuCurrent "mainmenu" . }} active{{ end }}'>{{ .Title }}</a></li>
+{{ end }}
+</ul>
+</div>

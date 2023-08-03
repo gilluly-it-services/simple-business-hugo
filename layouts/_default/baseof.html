@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{- block "title" . }}{{ .Title }} | {{ .Site.Title }}{{- end }}</title>
+<link rel="stylesheet" href="/css/colors.css">
+<link rel="stylesheet" href="/css/custom-colors.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon">
+<script src="/js/functions.js"></script>
+</head>
+<body onload="responsivemenu()">
+<div id="pagecontainer">
+<div id="header">
+{{- partial "header" . -}}
+</div>
+<nav>
+{{- partial "navbar" . -}}
+</nav>
+<main>
+{{- block "main" . }}
+{{- end }}
+</main>
+</div>
+<footer>
+<div id="footer">
+{{- partial "footer" . -}}
+</div>
+</footer>
+</body>
+</html>

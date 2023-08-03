@@ -1,0 +1,12 @@
+{{ if .Site.Params.logo }}<img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} logo image" id="site-logo">{{ end }}
+<div id="titleblock">
+<div id="site-title">
+<h1>{{ .Site.Title }}</h1>
+</div>
+{{ if .Site.Params.slogan }}<div id="site-slogan">{{ end }}
+{{ .Site.Params.slogan }}
+</div>
+</div>
+<div id="navbutton">
+<a href="javascript:void(0)" id="menubutton" onclick="navtoggle()">Menu</a>
+</div>

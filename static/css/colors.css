@@ -1,0 +1,12 @@
+:root {
+    --fg-main: rgb(15 15 15);
+    --fg-nav: rgb(255 255 255);
+    --fg-nav-hover: rgb(0 0 0);
+    --fg-a: rgb(15 15 175);
+
+    --bg-main: rgb(255 255 255);
+    --bg-page: rgb(210 210 210);
+    --bg-nav: rgb(0 0 0);
+    --bg-nav-hover: rgb(175 175 175);
+    --bg-nav-active: rgb(0 0 90);
+}

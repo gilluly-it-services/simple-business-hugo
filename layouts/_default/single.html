@@ -1,0 +1,14 @@
+{{- define "main" }}
+<div id="pagetitle">
+<h1>{{ .Title }}</h1>
+{{ if .Date }}<em>{{ .Date.Format "January 2, 2006" }}</em>{{ end }}
+</div>
+<div id="pagecontent">
+{{ .Content }}
+{{ if ne .Site.Home .FirstSection }}
+<br>
+<br>
+<p><a href="{{ .FirstSection.RelPermalink }}">Back to {{ .FirstSection.Title }}</a></p>
+{{ end }}
+</div>
+{{- end }}
